@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The Lipedema Reset Protocol — a science-based wellness guide to reduce swelling, support lymphatic flow, improve leg appearance and rebuild body confidence. Designed for women navigating lipedema.">
+<title>The Lipedema Reset Protocol | Science-Based Wellness for Women</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* =========================================================
+   RESET & BASE
+========================================================= */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: 'Inter', sans-serif;
+  background: #FAF8F3;
+  color: #2E2E2E;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
+h1,h2,h3,h4 { font-family: 'Playfair Display', serif; line-height: 1.25; }
+h1 { font-size: clamp(2rem, 5vw, 3.25rem); font-weight: 600; }
+h2 { font-size: clamp(1.6rem, 3.5vw, 2.5rem); font-weight: 600; }
+h3 { font-size: clamp(1.15rem, 2.5vw, 1.5rem); font-weight: 500; }
+h4 { font-size: 1.1rem; font-weight: 500; }
+p { font-size: 1.0625rem; color: #4a4a4a; }
+.serif-italic { font-family: 'Playfair Display', serif; font-style: italic; }
+
+/* =========================================================
+   COLOURS / TOKENS
+========================================================= */
+:root {
+  --off-white:   #FAF8F3;
+  --warm-beige:  #EFE7DA;
+  --sage:        #8FA48C;
+  --teal-soft:   #7FAEAA;
+  --teal-deep:   #2F6F6D;
+  --gold:        #C9B27E;
+  --charcoal:    #2E2E2E;
+  --grey-text:   #6F6F6F;
+  --white:       #FFFFFF;
+  --shadow:      0 4px 32px rgba(47,111,109,.08);
+  --shadow-hover:0 8px 48px rgba(47,111,109,.16);
+  --radius:      16px;
+  --radius-sm:   10px;
+}
+
+/* =========================================================
+   LAYOUT HELPERS
+========================================================= */
+.container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+.section-pad { padding: 96px 0; }
+.section-pad-sm { padding: 64px 0; }
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.flex { display: flex; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; }
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+.btn {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 16px 40px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all .25s ease;
+  letter-spacing: .02em;
+  border: 2px solid transparent;
+}
+.btn-primary {
+  background: var(--teal-deep);
+  color: var(--white);
+  box-shadow: 0 4px 24px rgba(47,111,109,.3);
+}
+.btn-primary:hover {
+  background: #256664;
+  box-shadow: 0 8px 36px rgba(47,111,109,.4);
+  transform: translateY(-2px);
+}
+.btn-outline {
+  background: transparent;
+  color: var(--teal-deep);
+  border-color: var(--teal-deep);
+}
+.btn-outline:hover {
+  background: var(--teal-deep);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+.btn-gold {
+  background: var(--gold);
+  color: var(--charcoal);
+  box-shadow: 0 4px 24px rgba(201,178,126,.35);
+}
+.btn-gold:hover {
+  background: #b89c65;
+  box-shadow: 0 8px 36px rgba(201,178,126,.5);
+  transform: translateY(-2px);
+}
+.btn-lg { font-size: 1.125rem; padding: 20px 52px; }
+.btn-block { display: block; width: 100%; text-align: center; }
+.cta-microcopy {
+  font-size: .85rem;
+  color: var(--grey-text);
+  margin-top: 12px;
+  font-style: italic;
+}
+
+/* =========================================================
+   SECTION LABELS
+========================================================= */
+.section-label {
+  display: inline-block;
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--teal-deep);
+  background: rgba(47,111,109,.08);
+  padding: 6px 16px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+.section-label--gold {
+  color: #8a6e2e;
+  background: rgba(201,178,126,.18);
+}
+.section-divider {
+  width: 56px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--teal-soft), var(--gold));
+  border-radius: 4px;
+  margin: 20px auto 0;
+}
+.section-divider--left { margin-left: 0; }
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(250,248,243,.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(143,164,140,.15);
+  padding: 16px 0;
+}
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar__logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--teal-deep);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar__logo-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid var(--teal-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  color: var(--teal-deep);
+  background: linear-gradient(135deg, rgba(127,174,170,.15), rgba(47,111,109,.08));
+}
+.navbar__cta { font-size: .9rem; padding: 10px 24px; }
+
+/* =========================================================
+   HERO
+========================================================= */
+.hero {
+  background: linear-gradient(160deg, var(--off-white) 0%, var(--warm-beige) 100%);
+  padding: 100px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -120px; right: -120px;
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(127,174,170,.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -80px; left: -80px;
+  width: 380px; height: 380px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,178,126,.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 64px;
+  align-items: center;
+}
+.hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--teal-deep);
+  margin-bottom: 24px;
+}
+.hero__eyebrow-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+.hero__title {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  color: var(--charcoal);
+  margin-bottom: 28px;
+}
+.hero__title em {
+  font-style: italic;
+  color: var(--teal-deep);
+}
+.hero__subtitle {
+  font-size: 1.125rem;
+  color: var(--grey-text);
+  max-width: 580px;
+  margin-bottom: 40px;
+  line-height: 1.75;
+}
+.hero__ctas {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.hero__trust {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.hero__trust-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: .85rem;
+  color: var(--grey-text);
+}
+.hero__trust-icon {
+  width: 18px; height: 18px;
+  color: var(--teal-soft);
+}
+.hero__visual {
+  position: relative;
+}
+.hero__card {
+  background: var(--white);
+  border-radius: 24px;
+  padding: 40px 36px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(143,164,140,.15);
+  position: relative;
+  z-index: 2;
+}
+.hero__card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--teal-deep);
+  margin-bottom: 6px;
+}
+.hero__card-sub {
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 28px;
+}
+.hero__card-list { list-style: none; }
+.hero__card-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: .9rem;
+  color: var(--charcoal);
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(239,231,218,.6);
+}
+.hero__card-list li:last-child { border-bottom: none; }
+.hero__card-list .check {
+  width: 18px; height: 18px; flex-shrink: 0;
+  background: var(--teal-deep);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-top: 2px;
+}
+.hero__card-list .check svg { width: 10px; height: 10px; stroke: #fff; }
+.hero__badge {
+  position: absolute;
+  top: -16px; right: -16px;
+  background: linear-gradient(135deg, var(--gold), #b89c65);
+  color: var(--charcoal);
+  border-radius: 50%;
+  width: 80px; height: 80px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(201,178,126,.4);
+  z-index: 3;
+}
+.hero__badge span:first-child { font-size: .65rem; letter-spacing: .05em; text-transform: uppercase; }
+.hero__badge span:last-child { font-size: 1.3rem; line-height: 1; }
+
+/* =========================================================
+   TRUST BAR
+========================================================= */
+.trust-bar {
+  background: var(--teal-deep);
+  padding: 20px 0;
+}
+.trust-bar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.trust-bar__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255,255,255,.85);
+  font-size: .875rem;
+  font-weight: 500;
+}
+.trust-bar__item svg { width: 18px; height: 18px; color: var(--gold); }
+
+/* =========================================================
+   PROBLEM SECTION
+========================================================= */
+.section-problem { background: var(--white); }
+.problem__intro {
+  max-width: 720px;
+  margin: 0 auto 56px;
+}
+.problem__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 860px;
+  margin: 0 auto 56px;
+}
+.problem__card {
+  background: var(--off-white);
+  border: 1px solid rgba(239,231,218,.8);
+  border-left: 3px solid var(--teal-soft);
+  border-radius: var(--radius-sm);
+  padding: 20px 24px;
+  font-size: .95rem;
+  color: var(--charcoal);
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+  line-height: 1.6;
+}
+.problem__closing {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+.problem__closing p {
+  font-size: 1.15rem;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: var(--teal-deep);
+  line-height: 1.65;
+}
+
+/* =========================================================
+   REFRAME SECTION
+========================================================= */
+.section-reframe {
+  background: linear-gradient(160deg, var(--warm-beige) 0%, var(--off-white) 100%);
+}
+.reframe__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+.reframe__content { }
+.reframe__visual {
+  background: var(--white);
+  border-radius: 24px;
+  padding: 48px 40px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(143,164,140,.12);
+}
+.reframe__stat {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--warm-beige);
+}
+.reframe__stat:last-child { border-bottom: none; padding-bottom: 0; }
+.reframe__stat-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--teal-deep);
+  line-height: 1;
+}
+.reframe__stat-label {
+  font-size: .875rem;
+  color: var(--grey-text);
+  margin-top: 6px;
+}
+.reframe__note {
+  font-size: .8rem;
+  color: var(--grey-text);
+  margin-top: 20px;
+  font-style: italic;
+  border-top: 1px solid var(--warm-beige);
+  padding-top: 16px;
+}
+.reframe__highlight {
+  background: rgba(47,111,109,.06);
+  border-left: 3px solid var(--teal-deep);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 20px 24px;
+  margin: 28px 0;
+  font-style: italic;
+  color: var(--teal-deep);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   WHY DIETS FAILED
+========================================================= */
+.section-diets { background: var(--white); }
+.comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 900px;
+  margin: 48px auto 0;
+}
+.comparison__col {
+  border-radius: var(--radius);
+  padding: 36px 32px;
+}
+.comparison__col--old {
+  background: #f5f0eb;
+  border: 1px solid rgba(111,111,111,.12);
+}
+.comparison__col--new {
+  background: linear-gradient(160deg, rgba(47,111,109,.06), rgba(127,174,170,.08));
+  border: 2px solid var(--teal-soft);
+  position: relative;
+}
+.comparison__badge {
+  position: absolute;
+  top: -14px; left: 50%;
+  transform: translateX(-50%);
+  background: var(--teal-deep);
+  color: white;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: 5px 18px;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+.comparison__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+.comparison__col--old .comparison__title { color: #999; }
+.comparison__col--new .comparison__title { color: var(--teal-deep); }
+.comparison__list { list-style: none; }
+.comparison__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: .95rem;
+  padding: 8px 0;
+  color: var(--charcoal);
+}
+.comparison__list li .icon { flex-shrink: 0; font-size: 1rem; margin-top: 1px; }
+.comparison__col--old .comparison__list li { color: var(--grey-text); }
+
+/* =========================================================
+   PRODUCT INTRO
+========================================================= */
+.section-product {
+  background: linear-gradient(160deg, var(--teal-deep) 0%, #1f4f4d 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+.section-product::before {
+  content: '';
+  position: absolute;
+  top: -200px; right: -200px;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(127,174,170,.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+.section-product .section-label {
+  color: var(--gold);
+  background: rgba(201,178,126,.15);
+}
+.product__intro {
+  max-width: 760px;
+  margin: 0 auto 64px;
+}
+.product__intro h2 { color: white; }
+.product__intro p { color: rgba(255,255,255,.8); font-size: 1.1rem; }
+.product__stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.product__stat {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: var(--radius);
+  padding: 28px 20px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+.product__stat-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+}
+.product__stat-label {
+  font-size: .85rem;
+  color: rgba(255,255,255,.75);
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+/* =========================================================
+   WHAT YOU'LL LEARN
+========================================================= */
+.section-learn { background: var(--off-white); }
+.learn__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 48px;
+}
+.learn__card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(239,231,218,.5);
+  transition: box-shadow .25s, transform .25s;
+}
+.learn__card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+}
+.learn__icon {
+  width: 48px; height: 48px;
+  background: linear-gradient(135deg, rgba(47,111,109,.1), rgba(127,174,170,.12));
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 16px;
+  font-size: 1.4rem;
+}
+.learn__card h4 { font-size: 1rem; margin-bottom: 10px; color: var(--charcoal); }
+.learn__card p { font-size: .875rem; color: var(--grey-text); line-height: 1.6; }
+
+/* =========================================================
+   CHAPTERS / INSIDE PROTOCOL
+========================================================= */
+.section-chapters { background: var(--warm-beige); }
+.chapters__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 48px;
+}
+.chapter__card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(239,231,218,.6);
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.chapter__number {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--teal-soft);
+  opacity: .4;
+  line-height: 1;
+  flex-shrink: 0;
+  min-width: 36px;
+}
+.chapter__content h4 { font-size: .95rem; margin-bottom: 6px; color: var(--teal-deep); }
+.chapter__content p { font-size: .83rem; color: var(--grey-text); line-height: 1.5; }
+
+.bonuses__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+.bonus__card {
+  background: linear-gradient(160deg, rgba(47,111,109,.06), rgba(201,178,126,.08));
+  border: 1px solid rgba(201,178,126,.3);
+  border-radius: var(--radius-sm);
+  padding: 20px 16px;
+  text-align: center;
+  transition: box-shadow .2s, transform .2s;
+}
+.bonus__card:hover { box-shadow: 0 6px 24px rgba(47,111,109,.12); transform: translateY(-2px); }
+.bonus__emoji { font-size: 1.6rem; margin-bottom: 10px; }
+.bonus__card p { font-size: .83rem; color: var(--teal-deep); font-weight: 500; line-height: 1.4; }
+.bonuses__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: var(--charcoal);
+  margin: 48px 0 20px;
+  text-align: center;
+}
+
+/* =========================================================
+   14-DAY RESET
+========================================================= */
+.section-reset {
+  background: var(--white);
+}
+.reset__intro {
+  max-width: 700px;
+  margin: 0 auto 48px;
+}
+.reset__features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 0 auto 48px;
+  max-width: 900px;
+}
+.reset__feature {
+  background: var(--off-white);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  border: 1px solid rgba(239,231,218,.8);
+  text-align: center;
+}
+.reset__feature-icon { font-size: 2rem; margin-bottom: 12px; }
+.reset__feature h4 { font-size: 1rem; color: var(--teal-deep); margin-bottom: 8px; }
+.reset__feature p { font-size: .875rem; color: var(--grey-text); line-height: 1.55; }
+.reset__daily {
+  max-width: 860px;
+  margin: 0 auto;
+  background: linear-gradient(160deg, rgba(47,111,109,.04), rgba(127,174,170,.06));
+  border: 1px solid rgba(127,174,170,.2);
+  border-radius: 24px;
+  padding: 44px 48px;
+}
+.reset__daily h3 {
+  color: var(--teal-deep);
+  margin-bottom: 28px;
+  text-align: center;
+}
+.reset__pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.reset__pillar {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.reset__pillar-icon {
+  width: 40px; height: 40px; flex-shrink: 0;
+  background: var(--teal-deep);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem;
+  color: white;
+}
+.reset__pillar-text h4 { font-size: .9rem; color: var(--charcoal); margin-bottom: 4px; }
+.reset__pillar-text p { font-size: .82rem; color: var(--grey-text); line-height: 1.5; }
+
+/* =========================================================
+   WHO IS IT FOR
+========================================================= */
+.section-who { background: var(--warm-beige); }
+.who__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 900px;
+  margin: 48px auto 0;
+}
+.who__col {
+  border-radius: var(--radius);
+  padding: 36px 32px;
+}
+.who__col--for {
+  background: var(--white);
+  border: 2px solid rgba(47,111,109,.2);
+  box-shadow: var(--shadow);
+}
+.who__col--not {
+  background: var(--off-white);
+  border: 1px solid rgba(111,111,111,.12);
+}
+.who__col-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0,0,0,.07);
+}
+.who__col--for .who__col-title { color: var(--teal-deep); }
+.who__col--not .who__col-title { color: var(--grey-text); }
+.who__list { list-style: none; }
+.who__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: .93rem;
+  padding: 8px 0;
+  color: var(--charcoal);
+  border-bottom: 1px solid rgba(0,0,0,.05);
+}
+.who__list li:last-child { border-bottom: none; }
+.who__list .icon { flex-shrink: 0; font-size: 1rem; margin-top: 1px; }
+
+/* =========================================================
+   PRICING
+========================================================= */
+.section-pricing { background: var(--off-white); }
+.pricing__intro {
+  max-width: 640px;
+  margin: 0 auto 56px;
+}
+.pricing__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1040px;
+  margin: 0 auto;
+  align-items: start;
+}
+.pricing__card {
+  background: var(--white);
+  border-radius: 24px;
+  padding: 36px 32px 40px;
+  border: 1px solid rgba(239,231,218,.6);
+  box-shadow: var(--shadow);
+  position: relative;
+  transition: box-shadow .25s, transform .25s;
+}
+.pricing__card:hover { box-shadow: var(--shadow-hover); transform: translateY(-4px); }
+.pricing__card--featured {
+  border: 2px solid var(--teal-deep);
+  transform: scale(1.04);
+  box-shadow: 0 12px 48px rgba(47,111,109,.18);
+}
+.pricing__card--featured:hover { transform: scale(1.04) translateY(-4px); }
+.pricing__popular {
+  position: absolute;
+  top: -16px; left: 50%;
+  transform: translateX(-50%);
+  background: var(--teal-deep);
+  color: white;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 6px 20px;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+.pricing__tier {
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--grey-text);
+  margin-bottom: 8px;
+}
+.pricing__name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: var(--charcoal);
+  margin-bottom: 20px;
+}
+.pricing__price {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--warm-beige);
+}
+.pricing__amount {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--teal-deep);
+  line-height: 1;
+}
+.pricing__currency { font-size: 1.4rem; vertical-align: super; margin-right: 2px; }
+.pricing__note { font-size: .82rem; color: var(--grey-text); margin-top: 6px; }
+.pricing__features { list-style: none; margin-bottom: 32px; }
+.pricing__features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: .875rem;
+  color: var(--charcoal);
+  padding: 7px 0;
+  border-bottom: 1px solid rgba(239,231,218,.7);
+}
+.pricing__features li:last-child { border-bottom: none; }
+.pricing__features .check { flex-shrink: 0; font-size: .95rem; }
+.pricing__features .check--yes { color: var(--teal-deep); }
+.pricing__features .check--plus { color: var(--gold); }
+
+/* =========================================================
+   GUARANTEE
+========================================================= */
+.section-guarantee {
+  background: linear-gradient(160deg, var(--warm-beige), var(--off-white));
+}
+.guarantee__inner {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.guarantee__badge {
+  flex-shrink: 0;
+  width: 140px; height: 140px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--teal-deep), var(--teal-soft));
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 32px rgba(47,111,109,.3);
+  padding: 16px;
+}
+.guarantee__badge-days {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.guarantee__badge-text { font-size: .65rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; opacity: .9; line-height: 1.4; }
+.guarantee__content h2 { margin-bottom: 16px; }
+.guarantee__content p { color: var(--grey-text); font-size: 1rem; line-height: 1.7; }
+
+/* =========================================================
+   FAQ
+========================================================= */
+.section-faq { background: var(--white); }
+.faq__list {
+  max-width: 780px;
+  margin: 48px auto 0;
+}
+.faq__item {
+  border-bottom: 1px solid rgba(239,231,218,.8);
+  overflow: hidden;
+}
+.faq__item:first-child { border-top: 1px solid rgba(239,231,218,.8); }
+.faq__question {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  color: var(--charcoal);
+  transition: color .2s;
+}
+.faq__question:hover { color: var(--teal-deep); }
+.faq__icon {
+  width: 28px; height: 28px; flex-shrink: 0;
+  border-radius: 50%;
+  border: 1.5px solid var(--teal-soft);
+  display: flex; align-items: center; justify-content: center;
+  transition: background .2s, transform .25s;
+  color: var(--teal-deep);
+}
+.faq__item.active .faq__icon {
+  background: var(--teal-deep);
+  color: white;
+  transform: rotate(45deg);
+}
+.faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .35s ease, padding .35s ease;
+}
+.faq__answer-inner {
+  padding: 0 0 22px;
+  font-size: .95rem;
+  color: var(--grey-text);
+  line-height: 1.75;
+}
+.faq__item.active .faq__answer { max-height: 400px; }
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+.section-final-cta {
+  background: linear-gradient(160deg, var(--teal-deep) 0%, #1b5250 100%);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.section-final-cta::before {
+  content: '';
+  position: absolute;
+  top: -150px; left: 50%;
+  transform: translateX(-50%);
+  width: 700px; height: 700px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,178,126,.12) 0%, transparent 65%);
+  pointer-events: none;
+}
+.section-final-cta h2 {
+  color: white;
+  max-width: 740px;
+  margin: 0 auto 20px;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+.section-final-cta .subtitle {
+  color: rgba(255,255,255,.75);
+  font-size: 1.1rem;
+  max-width: 620px;
+  margin: 0 auto 40px;
+}
+.final-cta-note {
+  color: rgba(255,255,255,.55);
+  font-size: .82rem;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+footer {
+  background: var(--charcoal);
+  color: rgba(255,255,255,.55);
+  padding: 40px 0;
+  font-size: .825rem;
+  line-height: 1.7;
+}
+.footer__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.footer__brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  color: rgba(255,255,255,.7);
+  margin-bottom: 8px;
+}
+.footer__links { display: flex; gap: 20px; flex-wrap: wrap; }
+.footer__links a { color: rgba(255,255,255,.45); transition: color .2s; }
+.footer__links a:hover { color: rgba(255,255,255,.8); }
+.footer__disclaimer {
+  border-top: 1px solid rgba(255,255,255,.08);
+  padding-top: 24px;
+  color: rgba(255,255,255,.38);
+  font-size: .78rem;
+}
+
+/* =========================================================
+   DECORATIVE ELEMENTS
+========================================================= */
+.wave-divider {
+  overflow: hidden;
+  line-height: 0;
+}
+.wave-divider svg { display: block; width: 100%; }
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media (max-width: 1024px) {
+  .hero__inner { grid-template-columns: 1fr; gap: 48px; }
+  .hero__visual { max-width: 480px; margin: 0 auto; }
+  .learn__grid { grid-template-columns: repeat(2, 1fr); }
+  .chapters__grid { grid-template-columns: repeat(2, 1fr); }
+  .bonuses__grid { grid-template-columns: repeat(3, 1fr); }
+  .product__stats { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .section-pad { padding: 64px 0; }
+  .section-pad-sm { padding: 44px 0; }
+  .grid-2, .reframe__inner, .comparison, .who__grid, .pricing__grid { grid-template-columns: 1fr; }
+  .pricing__card--featured { transform: none; }
+  .pricing__card--featured:hover { transform: translateY(-4px); }
+  .guarantee__inner { flex-direction: column; text-align: center; }
+  .learn__grid { grid-template-columns: 1fr 1fr; }
+  .reset__pillars { grid-template-columns: 1fr; gap: 16px; }
+  .reset__features { grid-template-columns: 1fr; }
+  .chapters__grid { grid-template-columns: 1fr; }
+  .bonuses__grid { grid-template-columns: repeat(2, 1fr); }
+  .product__stats { grid-template-columns: repeat(2, 1fr); }
+  .trust-bar__inner { gap: 20px; }
+  .hero__ctas { flex-direction: column; align-items: flex-start; }
+  .problem__grid { grid-template-columns: 1fr; }
+  .reset__daily { padding: 32px 24px; }
+  .footer__inner { flex-direction: column; gap: 20px; }
+}
+@media (max-width: 480px) {
+  .learn__grid { grid-template-columns: 1fr; }
+  .bonuses__grid { grid-template-columns: 1fr 1fr; }
+  .navbar__cta { display: none; }
+}
+
+/* =========================================================
+   UTILITIES
+========================================================= */
+.mb-4 { margin-bottom: 4px; }
+.mb-8 { margin-bottom: 8px; }
+.mb-12 { margin-bottom: 12px; }
+.mb-16 { margin-bottom: 16px; }
+.mb-24 { margin-bottom: 24px; }
+.mb-32 { margin-bottom: 32px; }
+.mb-40 { margin-bottom: 40px; }
+.mb-48 { margin-bottom: 48px; }
+.mt-24 { margin-top: 24px; }
+.mt-40 { margin-top: 40px; }
+.max-680 { max-width: 680px; margin-left: auto; margin-right: auto; }
+</style>
+</head>
+<body>
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar__inner">
+      <div class="navbar__logo">
+        <div class="navbar__logo-icon">LRP</div>
+        The Lipedema Reset Protocol
+      </div>
+      <a href="#pricing" class="btn btn-primary navbar__cta">View Plans</a>
+    </div>
+  </div>
+</nav>
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <div class="hero__eyebrow">
+          <span class="hero__eyebrow-dot"></span>
+          Science-Based Wellness for Women
+        </div>
+        <h1 class="hero__title">
+          You're Not Lazy.<br>
+          You're Not Weak.<br>
+          <em>Your Body May Be Dealing<br>With Something Diets Were<br>Never Designed to Fix.</em>
+        </h1>
+        <p class="hero__subtitle">
+          Discover <strong>The Lipedema Reset Protocol</strong> — a science-based, compassion-first guide designed to help women understand lipedema, reduce daily swelling, support lymphatic flow, improve leg appearance, and rebuild genuine confidence in their bodies.
+        </p>
+        <div class="hero__ctas">
+          <a href="#pricing" class="btn btn-primary btn-lg">Start Your 14-Day Reset</a>
+          <a href="#inside" class="btn btn-outline btn-lg">See What's Inside</a>
+        </div>
+        <p class="cta-microcopy">Educational wellness guide &nbsp;·&nbsp; No extreme dieting &nbsp;·&nbsp; No shame &nbsp;·&nbsp; No unrealistic promises.</p>
+        <div class="hero__trust">
+          <div class="hero__trust-item">
+            <svg class="hero__trust-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            30-Day Satisfaction Guarantee
+          </div>
+          <div class="hero__trust-item">
+            <svg class="hero__trust-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+            Secure checkout
+          </div>
+          <div class="hero__trust-item">
+            <svg class="hero__trust-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            Instant digital access
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__card">
+          <div class="hero__badge">
+            <span>From</span>
+            <span>€37</span>
+          </div>
+          <p class="hero__card-sub">Complete Wellness Protocol</p>
+          <p class="hero__card-title">The Lipedema Reset Protocol</p>
+          <ul class="hero__card-list">
+            <li>
+              <span class="check"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>
+              9 in-depth science-informed chapters
+            </li>
+            <li>
+              <span class="check"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>
+              14-Day Structured Reset Protocol
+            </li>
+            <li>
+              <span class="check"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>
+              Anti-Inflammatory 7-Day Meal Plan
+            </li>
+            <li>
+              <span class="check"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>
+              Lymphatic-Friendly Exercise Guide
+            </li>
+            <li>
+              <span class="check"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>
+              Daily Support Checklist
+            </li>
+            <li>
+              <span class="check"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>
+              Emotional support &amp; mindset tools
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     TRUST BAR
+========================================================= -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-bar__inner">
+      <div class="trust-bar__item">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        Science-Informed Content
+      </div>
+      <div class="trust-bar__item">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+        Created with Compassion
+      </div>
+      <div class="trust-bar__item">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        Start Within Minutes
+      </div>
+      <div class="trust-bar__item">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        30-Day Guarantee
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================================================
+     PROBLEM SECTION
+========================================================= -->
+<section class="section-problem section-pad">
+  <div class="container text-center">
+    <span class="section-label">We See You</span>
+    <h2 class="mb-16">You Have Tried Everything.<br><em class="serif-italic">And Nothing Worked.</em></h2>
+    <div class="section-divider mb-48"></div>
+    <div class="problem__intro">
+      <p style="font-size:1.1rem;color:#4a4a4a;line-height:1.8;">You counted calories. You tried low-carb, intermittent fasting, boot camps, detoxes. You watched the number on the scale move — but your legs stayed exactly the same. Heavy. Swollen. Tender. Disproportionate. And you couldn't understand why.</p>
+    </div>
+
+    <div class="problem__grid">
+      <div class="problem__card">"I lose weight in my face, arms and waist — but my legs never change no matter what I do."</div>
+      <div class="problem__card">"My legs feel so heavy and painful by the end of the day. I thought I was just unfit."</div>
+      <div class="problem__card">"A doctor told me to simply eat less and move more. I left the appointment in tears."</div>
+      <div class="problem__card">"I've stopped wearing dresses and shorts. I avoid the beach. I don't recognise myself anymore."</div>
+      <div class="problem__card">"I've blamed myself for years. I genuinely believed I had no willpower."</div>
+      <div class="problem__card">"Nothing I try works on my lower body. I feel like my body is working against me."</div>
+    </div>
+
+    <div class="problem__closing">
+      <p>"If any of this feels familiar — this page was written for you. And we want you to hear something important: the problem was never your character. It may never have been your fault at all."</p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     REFRAME SECTION
+========================================================= -->
+<section class="section-reframe section-pad">
+  <div class="container">
+    <div class="reframe__inner">
+      <div class="reframe__content">
+        <span class="section-label">A Different Perspective</span>
+        <h2 class="mb-24">Maybe the Problem Was Never<br><em class="serif-italic">Your Willpower.</em></h2>
+        <p class="mb-20" style="font-size:1.05rem;">Lipedema is a chronic condition affecting the fat tissue — most commonly in the legs, hips and buttocks — that is fundamentally different from ordinary weight gain. It is estimated to affect a significant proportion of women, yet it remains widely misdiagnosed and misunderstood.</p>
+        <p class="mb-20">The fat in lipedema behaves differently. It does not respond to standard calorie restriction the way ordinary fat does. It is often painful, tender to the touch, prone to swelling, and disproportionate to the rest of the body.</p>
+        <div class="reframe__highlight">
+          "You were not failing the diet.<br>The diet was failing you."
+        </div>
+        <p style="font-size:.9rem;color:var(--grey-text);font-style:italic;">If you have been diagnosed with lipedema — or strongly suspect it — this protocol was created specifically for you.</p>
+      </div>
+      <div class="reframe__visual">
+        <div class="reframe__stat">
+          <div class="reframe__stat-number">~11%</div>
+          <div class="reframe__stat-label">Estimated proportion of women affected by lipedema worldwide</div>
+        </div>
+        <div class="reframe__stat">
+          <div class="reframe__stat-number">~9 yrs</div>
+          <div class="reframe__stat-label">Average time from first symptoms to a correct diagnosis</div>
+        </div>
+        <div class="reframe__stat">
+          <div class="reframe__stat-number">Many</div>
+          <div class="reframe__stat-label">Women dismissed as simply overweight before the right answers emerged</div>
+        </div>
+        <p class="reframe__note">Figures are for educational context. This guide does not provide medical diagnosis. Always consult a qualified healthcare professional.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     WHY DIETS FAILED
+========================================================= -->
+<section class="section-diets section-pad">
+  <div class="container text-center">
+    <span class="section-label">Understanding the Root Cause</span>
+    <h2 class="mb-16">Why Traditional Diets Often<br><em class="serif-italic">Fail Women With Lipedema</em></h2>
+    <div class="section-divider mb-24"></div>
+    <p class="max-680 mb-8" style="font-size:1.05rem;">Lipedema fat tissue behaves differently from ordinary fat at a cellular level. Calorie restriction alone does not address inflammation, lymphatic congestion, hormonal sensitivity, or connective tissue involvement. A different body genuinely requires a different approach.</p>
+
+    <div class="comparison">
+      <div class="comparison__col comparison__col--old">
+        <p class="comparison__title">The Old Approach</p>
+        <ul class="comparison__list">
+          <li><span class="icon">✕</span> Aggressive calorie restriction</li>
+          <li><span class="icon">✕</span> High-intensity cardio that worsens inflammation</li>
+          <li><span class="icon">✕</span> Scale obsession and punishment cycles</li>
+          <li><span class="icon">✕</span> Shame-based motivation</li>
+          <li><span class="icon">✕</span> Ignoring lymphatic health entirely</li>
+          <li><span class="icon">✕</span> No consideration for hormonal factors</li>
+          <li><span class="icon">✕</span> Treating lipedema fat as ordinary fat</li>
+        </ul>
+      </div>
+      <div class="comparison__col comparison__col--new">
+        <div class="comparison__badge">The Reset Approach</div>
+        <p class="comparison__title">The Lipedema Reset Protocol</p>
+        <ul class="comparison__list">
+          <li><span class="icon">✓</span> Anti-inflammatory nutrition, not deprivation</li>
+          <li><span class="icon">✓</span> Gentle, lymphatic-friendly movement</li>
+          <li><span class="icon">✓</span> Active lymphatic drainage support</li>
+          <li><span class="icon">✓</span> Compression and hydration strategy</li>
+          <li><span class="icon">✓</span> Hormonal and inflammatory awareness</li>
+          <li><span class="icon">✓</span> Emotional self-compassion as a daily practice</li>
+          <li><span class="icon">✓</span> A body-specific approach, not a generic plan</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     PRODUCT INTRO
+========================================================= -->
+<section class="section-product section-pad" id="inside">
+  <div class="container text-center">
+    <div class="product__intro">
+      <span class="section-label">The Protocol</span>
+      <h2 class="mb-20" style="color:white;">Introducing <em class="serif-italic">The Lipedema Reset Protocol</em></h2>
+      <p>A complete premium wellness guide created to help women stop fighting their bodies — and start supporting them with practical, science-informed daily tools. This is not about restriction, punishment, or impossible promises. It is about understanding what your body actually needs.</p>
+    </div>
+    <div class="product__stats">
+      <div class="product__stat">
+        <div class="product__stat-number">9</div>
+        <div class="product__stat-label">Science-Informed Chapters</div>
+      </div>
+      <div class="product__stat">
+        <div class="product__stat-number">14</div>
+        <div class="product__stat-label">Day Structured Reset Protocol</div>
+      </div>
+      <div class="product__stat">
+        <div class="product__stat-number">5+</div>
+        <div class="product__stat-label">Practical Bonus Tools &amp; Guides</div>
+      </div>
+      <div class="product__stat">
+        <div class="product__stat-number">1</div>
+        <div class="product__stat-label">Compassionate, Whole-Person Approach</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     WHAT YOU'LL LEARN
+========================================================= -->
+<section class="section-learn section-pad">
+  <div class="container text-center">
+    <span class="section-label">Your Outcomes</span>
+    <h2 class="mb-16">What You Will Learn &amp; <em class="serif-italic">Experience</em></h2>
+    <div class="section-divider mb-48"></div>
+
+    <div class="learn__grid">
+      <div class="learn__card">
+        <div class="learn__icon">🔬</div>
+        <h4>Understand Lipedema Deeply</h4>
+        <p>Finally understand what lipedema is, why it is so frequently misunderstood, and why your body has been responding differently to standard approaches.</p>
+      </div>
+      <div class="learn__card">
+        <div class="learn__icon">🥗</div>
+        <h4>Anti-Inflammatory Nutrition</h4>
+        <p>Build meals that actively reduce inflammation without extreme restriction — nourishing your body rather than punishing it.</p>
+      </div>
+      <div class="learn__card">
+        <div class="learn__icon">🌊</div>
+        <h4>Support Lymphatic Flow</h4>
+        <p>Learn practical daily actions — hydration, movement, compression and self-massage — that support your lymphatic system and reduce swelling.</p>
+      </div>
+      <div class="learn__card">
+        <div class="learn__icon">🏃‍♀️</div>
+        <h4>Move In a Way That Helps</h4>
+        <p>Discover which exercises actively support lipedema management and which ones may be making symptoms worse.</p>
+      </div>
+      <div class="learn__card">
+        <div class="learn__icon">📋</div>
+        <h4>Build a Daily Routine</h4>
+        <p>Create a structured, sustainable daily rhythm — simple enough to maintain, effective enough to make a real difference over time.</p>
+      </div>
+      <div class="learn__card">
+        <div class="learn__icon">💛</div>
+        <h4>Rebuild Body Confidence</h4>
+        <p>Work through the emotional weight of living with lipedema, reduce self-blame, and begin relating to your body with understanding instead of frustration.</p>
+      </div>
+      <div class="learn__card">
+        <div class="learn__icon">📅</div>
+        <h4>Follow a Structured Reset</h4>
+        <p>Apply everything through a clear 14-day protocol with daily food, movement, hydration, lymphatic and mindset guidance.</p>
+      </div>
+      <div class="learn__card">
+        <div class="learn__icon">♾️</div>
+        <h4>Maintain Progress Long-Term</h4>
+        <p>Move beyond the initial reset into a long-term maintenance approach that fits your life — not a temporary fix, but a lasting foundation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     CHAPTERS
+========================================================= -->
+<section class="section-chapters section-pad">
+  <div class="container text-center">
+    <span class="section-label">Inside the Protocol</span>
+    <h2 class="mb-16">Everything Included — <em class="serif-italic">Chapter by Chapter</em></h2>
+    <div class="section-divider mb-48"></div>
+
+    <div class="chapters__grid">
+      <div class="chapter__card">
+        <div class="chapter__number">01</div>
+        <div class="chapter__content">
+          <h4>Understanding Lipedema: Beyond "Stubborn Fat"</h4>
+          <p>What lipedema actually is, how it differs from ordinary fat, its stages, symptoms and why it is so frequently missed or dismissed.</p>
+        </div>
+      </div>
+      <div class="chapter__card">
+        <div class="chapter__number">02</div>
+        <div class="chapter__content">
+          <h4>Why Diets Don't Work — and What Actually Does</h4>
+          <p>The science behind why calorie restriction alone cannot address lipedema fat, inflammation and lymphatic dysfunction.</p>
+        </div>
+      </div>
+      <div class="chapter__card">
+        <div class="chapter__number">03</div>
+        <div class="chapter__content">
+          <h4>Anti-Inflammatory Nutrition Protocol</h4>
+          <p>A practical, non-restrictive nutritional framework built around reducing inflammation and supporting tissue health.</p>
+        </div>
+      </div>
+      <div class="chapter__card">
+        <div class="chapter__number">04</div>
+        <div class="chapter__content">
+          <h4>Exercise Strategy: What Helps and What Hurts</h4>
+          <p>A clear guide to lymphatic-friendly movement — what to prioritise, what to modify, and what to approach with caution.</p>
+        </div>
+      </div>
+      <div class="chapter__card">
+        <div class="chapter__number">05</div>
+        <div class="chapter__content">
+          <h4>Treatments &amp; Daily Support Tools</h4>
+          <p>An overview of evidence-informed approaches including compression, manual lymphatic drainage, and professional care options.</p>
+        </div>
+      </div>
+      <div class="chapter__card">
+        <div class="chapter__number">06</div>
+        <div class="chapter__content">
+          <h4>The Daily Routine That Changes Everything</h4>
+          <p>How to structure a morning, midday and evening rhythm that consistently supports your lymphatic and inflammatory health.</p>
+        </div>
+      </div>
+      <div class="chapter__card">
+        <div class="chapter__number">07</div>
+        <div class="chapter__content">
+          <h4>The Emotional Side of Lipedema</h4>
+          <p>Addressing body image, medical trauma, self-compassion and the psychological weight of living with a condition that is so rarely understood.</p>
+        </div>
+      </div>
+      <div class="chapter__card">
+        <div class="chapter__number">08</div>
+        <div class="chapter__content">
+          <h4>The 14-Day Lipedema Reset Protocol</h4>
+          <p>Day-by-day structured guidance bringing together nutrition, movement, hydration, lymphatic support and mindset practice.</p>
+        </div>
+      </div>
+      <div class="chapter__card">
+        <div class="chapter__number">09</div>
+        <div class="chapter__content">
+          <h4>Long-Term Maintenance Plan</h4>
+          <p>Building on the reset with a sustainable long-term approach — how to adapt the protocol to your seasons, cycles and life.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="bonuses__title">Bonuses Included in Your Protocol</h3>
+    <div class="bonuses__grid">
+      <div class="bonus__card">
+        <div class="bonus__emoji">🍽️</div>
+        <p>7-Day Anti-Inflammatory Meal Plan</p>
+      </div>
+      <div class="bonus__card">
+        <div class="bonus__emoji">🛒</div>
+        <p>Lipedema-Friendly Shopping List</p>
+      </div>
+      <div class="bonus__card">
+        <div class="bonus__emoji">✅</div>
+        <p>Daily Lipedema Support Checklist</p>
+      </div>
+      <div class="bonus__card">
+        <div class="bonus__emoji">🤸‍♀️</div>
+        <p>Lymphatic Exercise Guide</p>
+      </div>
+      <div class="bonus__card">
+        <div class="bonus__emoji">⚡</div>
+        <p>Quick Start Guide</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     14-DAY RESET
+========================================================= -->
+<section class="section-reset section-pad">
+  <div class="container text-center">
+    <span class="section-label">The 14-Day Reset</span>
+    <h2 class="mb-16">Not a Cleanse. Not a Detox.<br><em class="serif-italic">A Real Plan for Real Women.</em></h2>
+    <div class="section-divider mb-32"></div>
+    <div class="reset__intro">
+      <p style="font-size:1.075rem;line-height:1.8;">This is not a punishment. This is 14 days of structured, compassionate daily action — designed to bring together everything you learn in the guide into a practical rhythm your body can actually work with.</p>
+    </div>
+
+    <div class="reset__features">
+      <div class="reset__feature">
+        <div class="reset__feature-icon">🎯</div>
+        <h4>Structured, Not Rigid</h4>
+        <p>Each day has a clear focus area, but every element is designed to be adapted to your life, energy levels and current symptoms.</p>
+      </div>
+      <div class="reset__feature">
+        <div class="reset__feature-icon">🔄</div>
+        <h4>Whole-Person Design</h4>
+        <p>The reset addresses food, movement, hydration, lymphatic health and mindset together — because lipedema management requires all of them.</p>
+      </div>
+      <div class="reset__feature">
+        <div class="reset__feature-icon">📈</div>
+        <h4>Progressive and Sustainable</h4>
+        <p>Each day builds on the last, creating gradual habits that continue well beyond day 14 as the foundation of your long-term approach.</p>
+      </div>
+    </div>
+
+    <div class="reset__daily">
+      <h3>Every Day of Your Reset Includes:</h3>
+      <div class="reset__pillars">
+        <div class="reset__pillar">
+          <div class="reset__pillar-icon">🥦</div>
+          <div class="reset__pillar-text">
+            <h4>Food Focus</h4>
+            <p>A daily nutritional theme with guidance on what to prioritise and why it supports your body specifically.</p>
+          </div>
+        </div>
+        <div class="reset__pillar">
+          <div class="reset__pillar-icon">🚶‍♀️</div>
+          <div class="reset__pillar-text">
+            <h4>Movement Focus</h4>
+            <p>A gentle, lymphatic-informed movement prompt suited to your energy and adapted to lipedema management.</p>
+          </div>
+        </div>
+        <div class="reset__pillar">
+          <div class="reset__pillar-icon">💧</div>
+          <div class="reset__pillar-text">
+            <h4>Hydration Goal</h4>
+            <p>A clear, achievable daily hydration target and guidance on how hydration supports lymphatic function.</p>
+          </div>
+        </div>
+        <div class="reset__pillar">
+          <div class="reset__pillar-icon">🌿</div>
+          <div class="reset__pillar-text">
+            <h4>Lymphatic Support</h4>
+            <p>A daily action — compression, self-massage, elevation or breathwork — to actively support fluid circulation.</p>
+          </div>
+        </div>
+        <div class="reset__pillar">
+          <div class="reset__pillar-icon">💬</div>
+          <div class="reset__pillar-text">
+            <h4>Mindset Prompt</h4>
+            <p>A short daily reflection to shift the internal dialogue from self-blame to understanding and self-compassion.</p>
+          </div>
+        </div>
+        <div class="reset__pillar">
+          <div class="reset__pillar-icon">🌙</div>
+          <div class="reset__pillar-text">
+            <h4>Evening Reflection</h4>
+            <p>A gentle closing prompt to consolidate the day's learning and prepare your mind for rest and recovery.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     WHO IS IT FOR
+========================================================= -->
+<section class="section-who section-pad">
+  <div class="container text-center">
+    <span class="section-label">Is This For You?</span>
+    <h2 class="mb-16">Created for Women Who <em class="serif-italic">Deserve Better Answers</em></h2>
+    <div class="section-divider mb-48"></div>
+
+    <div class="who__grid">
+      <div class="who__col who__col--for">
+        <p class="who__col-title">✦ This is for you if…</p>
+        <ul class="who__list">
+          <li><span class="icon">🌿</span>You have been diagnosed with lipedema or strongly suspect you may have it</li>
+          <li><span class="icon">🌿</span>Your legs feel heavy, painful, swollen or tender — especially by the end of the day</li>
+          <li><span class="icon">🌿</span>Diets have changed your upper body but left your legs unchanged</li>
+          <li><span class="icon">🌿</span>You want a science-informed, compassionate approach — not a punishment plan</li>
+          <li><span class="icon">🌿</span>You want practical daily tools you can start using immediately</li>
+          <li><span class="icon">🌿</span>You are ready to stop blaming yourself and start understanding your body</li>
+          <li><span class="icon">🌿</span>You want to feel more comfortable in your own body, without extreme measures</li>
+        </ul>
+      </div>
+      <div class="who__col who__col--not">
+        <p class="who__col-title">This is not for you if…</p>
+        <ul class="who__list">
+          <li><span class="icon">○</span>You are looking for a miracle cure or guaranteed medical results</li>
+          <li><span class="icon">○</span>You want extreme, rapid weight-loss promises</li>
+          <li><span class="icon">○</span>You are unwilling to consult healthcare professionals when appropriate</li>
+          <li><span class="icon">○</span>You are looking for a replacement for professional medical treatment</li>
+        </ul>
+        <p style="font-size:.85rem;color:var(--grey-text);margin-top:20px;font-style:italic;text-align:left;">This guide is an educational wellness resource. It is not a substitute for professional medical care, diagnosis or treatment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     PRICING
+========================================================= -->
+<section class="section-pricing section-pad" id="pricing">
+  <div class="container text-center">
+    <span class="section-label">Choose Your Version</span>
+    <h2 class="mb-16">Start Where You Are —<br><em class="serif-italic">With the Support You Need</em></h2>
+    <div class="section-divider mb-24"></div>
+    <p class="max-680 pricing__intro" style="color:var(--grey-text);">Every version includes the complete core protocol. Choose the level of support that feels right for you right now. You can always upgrade later.</p>
+
+    <div class="pricing__grid">
+
+      <!-- BASIC -->
+      <div class="pricing__card">
+        <p class="pricing__tier">Essential</p>
+        <p class="pricing__name">Basic</p>
+        <div class="pricing__price">
+          <div class="pricing__amount"><span class="pricing__currency">€</span>37</div>
+          <p class="pricing__note">One-time payment · Instant access</p>
+        </div>
+        <ul class="pricing__features">
+          <li><span class="check check--yes">✓</span>Main ebook — all 9 chapters</li>
+          <li><span class="check check--yes">✓</span>14-Day Lipedema Reset Protocol</li>
+          <li><span class="check check--yes">✓</span>7-Day Anti-Inflammatory Meal Plan</li>
+          <li><span class="check check--yes">✓</span>Lipedema-Friendly Shopping List</li>
+          <li><span class="check check--yes">✓</span>Daily Lipedema Support Checklist</li>
+          <li><span class="check check--yes">✓</span>Lymphatic Exercise Guide</li>
+          <li><span class="check check--yes">✓</span>Quick Start Guide</li>
+        </ul>
+        <a href="#" class="btn btn-outline btn-block">Get Basic Access</a>
+      </div>
+
+      <!-- PREMIUM -->
+      <div class="pricing__card pricing__card--featured">
+        <div class="pricing__popular">⭐ Most Popular</div>
+        <p class="pricing__tier">Complete</p>
+        <p class="pricing__name">Premium</p>
+        <div class="pricing__price">
+          <div class="pricing__amount"><span class="pricing__currency">€</span>67</div>
+          <p class="pricing__note">One-time payment · Instant access</p>
+        </div>
+        <ul class="pricing__features">
+          <li><span class="check check--yes">✓</span>Everything in Basic, plus:</li>
+          <li><span class="check check--plus">+</span>Audio version of the complete ebook</li>
+          <li><span class="check check--plus">+</span>6 in-depth video lessons</li>
+          <li><span class="check check--plus">+</span>Printable PDF checklists &amp; worksheets</li>
+          <li><span class="check check--plus">+</span>Confidence &amp; Body Image Workbook</li>
+          <li><span class="check check--plus">+</span>Access to private online community</li>
+        </ul>
+        <a href="#" class="btn btn-primary btn-block">Choose Premium</a>
+        <p class="cta-microcopy" style="text-align:center;">Best value for most women</p>
+      </div>
+
+      <!-- VIP -->
+      <div class="pricing__card">
+        <p class="pricing__tier">Personalised</p>
+        <p class="pricing__name">VIP</p>
+        <div class="pricing__price">
+          <div class="pricing__amount"><span class="pricing__currency">€</span>147</div>
+          <p class="pricing__note">One-time payment · Includes consultation</p>
+        </div>
+        <ul class="pricing__features">
+          <li><span class="check check--yes">✓</span>Everything in Premium, plus:</li>
+          <li><span class="check check--plus">+</span>60-min 1:1 consultation with a certified wellness coach</li>
+          <li><span class="check check--plus">+</span>Personalised protocol review &amp; recommendations</li>
+          <li><span class="check check--plus">+</span>Monthly group Q&amp;A call</li>
+          <li><span class="check check--plus">+</span>Priority access to updated research &amp; content</li>
+          <li><span class="check check--plus">+</span>Certificate of completion</li>
+        </ul>
+        <a href="#" class="btn btn-gold btn-block">Get VIP Access</a>
+      </div>
+
+    </div>
+
+    <p style="font-size:.82rem;color:var(--grey-text);margin-top:32px;font-style:italic;">Prices are in EUR. Secure checkout. Instant digital delivery. 30-day satisfaction guarantee on all versions.</p>
+  </div>
+</section>
+
+<!-- =========================================================
+     GUARANTEE
+========================================================= -->
+<section class="section-guarantee section-pad-sm">
+  <div class="container">
+    <div class="guarantee__inner">
+      <div class="guarantee__badge">
+        <div class="guarantee__badge-days">30</div>
+        <div class="guarantee__badge-text">Day<br>Satisfaction<br>Guarantee</div>
+      </div>
+      <div class="guarantee__content">
+        <span class="section-label section-label--gold">Our Promise</span>
+        <h2 class="mb-16">Try It. Experience It. <em class="serif-italic">Then Decide.</em></h2>
+        <p>We want you to feel completely confident in your decision. Try the guide, engage with the 14-Day Reset Protocol, and if after 30 days you feel it has not provided meaningful value to your understanding and daily routine, simply contact us and we will make it right — no lengthy explanations required.</p>
+        <p style="margin-top:12px;font-size:.875rem;font-style:italic;">This is not a guarantee of medical or physical results. It is a commitment to delivering a genuinely valuable, high-quality educational wellness experience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     FAQ
+========================================================= -->
+<section class="section-faq section-pad">
+  <div class="container text-center">
+    <span class="section-label">Questions Answered</span>
+    <h2 class="mb-16">Frequently Asked <em class="serif-italic">Questions</em></h2>
+    <div class="section-divider mb-16"></div>
+
+    <div class="faq__list text-left">
+
+      <div class="faq__item">
+        <button class="faq__question">
+          Is this a medical treatment?
+          <span class="faq__icon"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq__answer"><div class="faq__answer-inner">No. The Lipedema Reset Protocol is an educational wellness guide. It is not a medical treatment, nor is it intended to diagnose, treat or cure any condition. It is designed to support your understanding of lipedema and provide practical, science-informed daily tools. Always consult a qualified healthcare professional for medical guidance.</div></div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question">
+          Can this cure lipedema?
+          <span class="faq__icon"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq__answer"><div class="faq__answer-inner">No, and we would never claim that it can. Lipedema is a chronic condition that currently has no known cure. This protocol is designed to help you support your body, reduce symptoms where possible, improve your quality of life and relationship with your body — not to make false promises about outcomes.</div></div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question">
+          Is this only for women who have been officially diagnosed with lipedema?
+          <span class="faq__icon"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq__answer"><div class="faq__answer-inner">Not necessarily. Many women access this guide while on the journey to understanding their symptoms, whether or not they have a formal diagnosis. If your experience resonates strongly with what is described — disproportionate leg weight, pain, swelling, poor response to diets — this guide may offer meaningful insight and practical tools for you.</div></div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question">
+          Do I need to buy compression garments or special equipment?
+          <span class="faq__icon"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq__answer"><div class="faq__answer-inner">No purchases are required to begin the protocol. The guide covers compression as one supportive tool and explains how it works — but the core programme can be followed without it. We provide guidance so you can make informed choices, not create additional financial pressure.</div></div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question">
+          Is this a weight-loss programme?
+          <span class="faq__icon"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq__answer"><div class="faq__answer-inner">No. This is a wellness and quality-of-life protocol focused on reducing inflammation, supporting lymphatic function, improving daily comfort, and rebuilding body confidence. Weight loss is not the primary goal, and the guide does not make weight-loss promises. The focus is on how you feel — in your body and about your body.</div></div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question">
+          I am already working with a doctor or physiotherapist. Can I still use this guide?
+          <span class="faq__icon"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq__answer"><div class="faq__answer-inner">Absolutely — and we actively encourage it. This guide is designed to complement, not replace, professional care. Many women use it alongside medical treatment to better understand their condition, ask more informed questions, and support their bodies between appointments. Always share new approaches with your healthcare team.</div></div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question">
+          How quickly can I start after purchasing?
+          <span class="faq__icon"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq__answer"><div class="faq__answer-inner">Immediately. All versions are delivered digitally within minutes of purchase. Your Quick Start Guide is specifically designed so you can take your first meaningful action on day one — no lengthy setup or complicated preparation required.</div></div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question">
+          Is the meal plan very restrictive?
+          <span class="faq__icon"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq__answer"><div class="faq__answer-inner">Not at all. The nutritional approach is built around abundance and nourishment rather than deprivation. The 7-day meal plan focuses on anti-inflammatory ingredients and satisfying, balanced meals. There are no extreme calorie restrictions and no foods are labelled as "forbidden". The philosophy is: add more of what supports you.</div></div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question">
+          Can I follow this if I am a complete beginner with no background in nutrition or wellness?
+          <span class="faq__icon"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq__answer"><div class="faq__answer-inner">Yes, absolutely. The guide is written to be clear and accessible to every woman, regardless of prior knowledge. Complex science is explained in plain, warm language. The Quick Start Guide and daily checklists make implementation straightforward from day one.</div></div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question">
+          Which version should I choose?
+          <span class="faq__icon"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq__answer"><div class="faq__answer-inner">If you want to start immediately with the complete core protocol, Basic is a strong choice. If you prefer audio learning, video support, printable resources and community connection, Premium offers considerably more and is our most popular option. If you want personalised 1:1 guidance alongside the programme, VIP is designed for you. All versions include the full 14-Day Reset Protocol.</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     FINAL CTA
+========================================================= -->
+<section class="section-final-cta section-pad">
+  <div class="container">
+    <span class="section-label" style="color:var(--gold);background:rgba(201,178,126,.15);">Begin Today</span>
+    <h2>"Your body was never the enemy.<br><em class="serif-italic">It was asking for the right kind of support."</em></h2>
+    <p class="subtitle">Begin your reset today with science, compassion and practical tools created specifically for women navigating lipedema. No shame. No extreme restriction. No unrealistic promises.</p>
+    <a href="#pricing" class="btn btn-gold btn-lg">Start The Lipedema Reset Protocol</a>
+    <p class="final-cta-note">Instant digital access · 30-day satisfaction guarantee · Educational wellness guide</p>
+  </div>
+</section>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+<footer>
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <p class="footer__brand">The Lipedema Reset Protocol</p>
+        <p>A science-based wellness guide for women.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact</a>
+        <a href="#">Refund Policy</a>
+      </div>
+    </div>
+    <div class="footer__disclaimer">
+      <strong style="color:rgba(255,255,255,.55);">Medical Disclaimer:</strong> This guide is for educational and wellness purposes only. It is not intended to diagnose, treat, cure, or prevent lipedema or any other medical condition. The information provided is not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional before making changes to your diet, exercise routine, treatment approach, or self-care practices. Individual results will vary. No specific health outcomes are guaranteed.
+      <br><br>
+      © 2025 The Lipedema Reset Protocol. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<!-- =========================================================
+     JAVASCRIPT — FAQ ACCORDION
+========================================================= -->
+<script>
+document.querySelectorAll('.faq__question').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var item = this.closest('.faq__item');
+    var isOpen = item.classList.contains('active');
+    document.querySelectorAll('.faq__item').forEach(function(el) {
+      el.classList.remove('active');
+    });
+    if (!isOpen) item.classList.add('active');
+  });
+});
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+  anchor.addEventListener('click', function(e) {
+    var target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+// Sticky navbar shadow on scroll
+window.addEventListener('scroll', function() {
+  var nav = document.querySelector('.navbar');
+  if (window.scrollY > 20) {
+    nav.style.boxShadow = '0 2px 24px rgba(0,0,0,.08)';
+  } else {
+    nav.style.boxShadow = 'none';
+  }
+});
+</script>
+</body>
+</html>
