@@ -1039,6 +1039,130 @@ p { font-size: 1.0625rem; color: #4a4a4a; }
 .faq__item.active .faq__answer { max-height: 400px; }
 
 /* =========================================================
+   PERSUASION IMAGES
+========================================================= */
+.hero__lifestyle-img {
+  margin-top: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.hero__lifestyle-img img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+}
+.problem__visual {
+  max-width: 780px;
+  margin: 0 auto 48px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(47,111,109,.12);
+  position: relative;
+}
+.problem__visual img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: center 25%;
+  display: block;
+}
+.problem__visual-caption {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: linear-gradient(to top, rgba(47,111,109,.82) 0%, transparent 100%);
+  padding: 40px 36px 28px;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+.section-inspire {
+  background: var(--warm-beige);
+}
+.inspire__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.inspire__image {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.inspire__image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+}
+.inspire__content { }
+.inspire__content h2 { margin-bottom: 20px; }
+.inspire__content p { margin-bottom: 16px; font-size: 1.05rem; line-height: 1.8; }
+.inspire__quote {
+  background: rgba(47,111,109,.06);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 12px 12px 0;
+  padding: 16px 20px;
+  margin: 24px 0;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: var(--teal-deep);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+.nutrition__visual {
+  max-width: 860px;
+  margin: 48px auto 0;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+.nutrition__visual img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.nutrition__visual-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(135deg, rgba(47,111,109,.55) 0%, transparent 60%);
+  display: flex;
+  align-items: center;
+  padding: 36px 44px;
+}
+.nutrition__visual-text {
+  color: white;
+  max-width: 360px;
+}
+.nutrition__visual-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+.nutrition__visual-text p {
+  color: rgba(255,255,255,.85);
+  font-size: .95rem;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .inspire__inner { grid-template-columns: 1fr; }
+  .inspire__image img { height: 280px; }
+  .problem__visual img { height: 220px; }
+  .nutrition__visual img { height: 220px; }
+  .nutrition__visual-overlay { padding: 24px; }
+}
+
+/* =========================================================
    FINAL CTA
 ========================================================= */
 .section-final-cta {
@@ -1229,10 +1353,13 @@ footer {
         </div>
       </div>
       <div class="hero__visual">
-        <div class="hero__card">
+        <div class="hero__lifestyle-img">
+          <img src="https://images.pexels.com/photos/3757954/pexels-photo-3757954.jpeg?auto=compress&cs=tinysrgb&w=500&h=180&fit=crop" alt="Woman experiencing wellness and body confidence" loading="lazy">
+        </div>
+        <div class="hero__card" style="margin-top:20px;">
           <div class="hero__badge">
             <span>From</span>
-            <span>€37</span>
+            <span>€9,90</span>
           </div>
           <p class="hero__card-sub">Complete Wellness Protocol</p>
           <p class="hero__card-title">The Lipedema Reset Protocol</p>
@@ -1306,6 +1433,10 @@ footer {
       <p style="font-size:1.1rem;color:#4a4a4a;line-height:1.8;">You counted calories. You tried low-carb, intermittent fasting, boot camps, detoxes. You watched the number on the scale move — but your legs stayed exactly the same. Heavy. Swollen. Tender. Disproportionate. And you couldn't understand why.</p>
     </div>
 
+    <div class="problem__visual">
+      <img src="https://images.pexels.com/photos/3807571/pexels-photo-3807571.jpeg?auto=compress&cs=tinysrgb&w=780&h=340&fit=crop" alt="Woman feeling understood and supported" loading="lazy">
+      <div class="problem__visual-caption">"You are not alone. Millions of women feel exactly the same — and most have never been given a real answer."</div>
+    </div>
     <div class="problem__grid">
       <div class="problem__card">"I lose weight in my face, arms and waist — but my legs never change no matter what I do."</div>
       <div class="problem__card">"My legs feel so heavy and painful by the end of the day. I thought I was just unfit."</div>
@@ -1391,6 +1522,16 @@ footer {
           <li><span class="icon">✓</span> Emotional self-compassion as a daily practice</li>
           <li><span class="icon">✓</span> A body-specific approach, not a generic plan</li>
         </ul>
+      </div>
+    </div>
+
+    <div class="nutrition__visual">
+      <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=860&h=300&fit=crop" alt="Anti-inflammatory colourful whole foods" loading="lazy">
+      <div class="nutrition__visual-overlay">
+        <div class="nutrition__visual-text">
+          <h3>Anti-Inflammatory Nutrition</h3>
+          <p>Nourishing, satisfying meals built to support your body — not punish it.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -1699,6 +1840,27 @@ footer {
 </section>
 
 <!-- =========================================================
+     INSPIRE / PRE-PRICING IMAGE
+========================================================= -->
+<section class="section-inspire section-pad">
+  <div class="container">
+    <div class="inspire__inner">
+      <div class="inspire__image">
+        <img src="https://images.pexels.com/photos/3764119/pexels-photo-3764119.jpeg?auto=compress&cs=tinysrgb&w=600&h=420&fit=crop" alt="Woman feeling confident and at peace in her body" loading="lazy">
+      </div>
+      <div class="inspire__content">
+        <span class="section-label">You Deserve This</span>
+        <h2 class="mb-16">A Body That Is <em class="serif-italic">Supported,<br>Not Punished.</em></h2>
+        <p>You have spent years trying to force your body into submission. Cutting, restricting, pushing, blaming. And none of it worked — because none of it was designed for a body like yours.</p>
+        <div class="inspire__quote">"This is not about losing weight. It is about finally understanding what your body needs — and giving it that."</div>
+        <p>The Lipedema Reset Protocol gives you the knowledge, the tools and the daily structure to support your body with compassion — and start feeling at home in it again.</p>
+        <a href="https://hoppeje.gumroad.com/l/THELIPEDEMARESETPROTOCOL" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:24px;">Get Instant Access — €9,90</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
      PRICING
 ========================================================= -->
 <section class="section-pricing section-pad" id="pricing">
@@ -1716,7 +1878,7 @@ footer {
         <p class="pricing__tier">Essential</p>
         <p class="pricing__name">Basic</p>
         <div class="pricing__price">
-          <div class="pricing__amount"><span class="pricing__currency">€</span>37</div>
+          <div class="pricing__amount"><span class="pricing__currency">€</span>9,90</div>
           <p class="pricing__note">One-time payment · Instant access</p>
         </div>
         <ul class="pricing__features">
@@ -1728,7 +1890,7 @@ footer {
           <li><span class="check check--yes">✓</span>Lymphatic Exercise Guide</li>
           <li><span class="check check--yes">✓</span>Quick Start Guide</li>
         </ul>
-        <a href="https://hoppeje.gumroad.com/l/THELIPEDEMARESETPROTOCOL" target="_blank" rel="noopener" class="btn btn-primary btn-block">Get Instant Access — €37</a>
+        <a href="https://hoppeje.gumroad.com/l/THELIPEDEMARESETPROTOCOL" target="_blank" rel="noopener" class="btn btn-primary btn-block">Get Instant Access — €9,90</a>
         <p class="cta-microcopy" style="text-align:center;">30-day satisfaction guarantee · Secure checkout</p>
       </div>
 
