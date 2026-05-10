@@ -1244,6 +1244,55 @@ footer {
 .wave-divider svg { display: block; width: 100%; }
 
 /* =========================================================
+   VIDEO SECTION
+========================================================= */
+.video-section {
+  background: var(--off-white);
+  padding: 96px 0;
+  text-align: center;
+}
+.video-section .section-label { margin-bottom: 16px; }
+.video-section h2 {
+  color: var(--teal-deep);
+  max-width: 720px;
+  margin: 0 auto 20px;
+}
+.video-section .video-intro {
+  color: var(--grey-text);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(47,111,109,.18);
+  background: var(--warm-beige);
+  max-width: 860px;
+  margin: 0 auto;
+}
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.video-disclaimer {
+  font-size: .8rem;
+  color: var(--grey-text);
+  margin-top: 18px;
+  font-style: italic;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================================================
    RESPONSIVE
 ========================================================= */
 @media (max-width: 1024px) {
@@ -1304,7 +1353,7 @@ footer {
   <div class="container">
     <div class="navbar__inner">
       <div class="navbar__logo">
-        <img src="Gemini_Generated_Image_3g8wz63g8wz63g8w.png" alt="The Lipedema Reset Protocol logo" style="width:36px;height:36px;object-fit:contain;border-radius:50%;">
+        <img src="https://raw.githubusercontent.com/jessicahopper/lipedema-reset-protocol/master/Gemini_Generated_Image_3g8wz63g8wz63g8w.png" alt="The Lipedema Reset Protocol logo" style="width:36px;height:36px;object-fit:contain;border-radius:50%;">
         The Lipedema Reset Protocol
       </div>
       <a href="#pricing" class="btn btn-primary navbar__cta">View Plans</a>
@@ -1319,7 +1368,7 @@ footer {
   <div class="container">
     <div class="hero__inner">
       <div class="hero__copy">
-        <img src="Gemini_Generated_Image_auvd59auvd59auvd.png" alt="The Lipedema Reset Protocol" style="width:220px;margin-bottom:28px;">
+        <img src="https://raw.githubusercontent.com/jessicahopper/lipedema-reset-protocol/master/Gemini_Generated_Image_auvd59auvd59auvd.png" alt="The Lipedema Reset Protocol" style="width:220px;margin-bottom:28px;">
         <div class="hero__eyebrow">
           <span class="hero__eyebrow-dot"></span>
           Science-Based Wellness for Women
@@ -1340,7 +1389,7 @@ footer {
         <div class="hero__trust">
           <div class="hero__trust-item">
             <svg class="hero__trust-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            30-Day Satisfaction Guarantee
+            14-Day Satisfaction Guarantee
           </div>
           <div class="hero__trust-item">
             <svg class="hero__trust-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
@@ -1415,7 +1464,7 @@ footer {
       </div>
       <div class="trust-bar__item">
         <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        30-Day Guarantee
+        14-Day Guarantee
       </div>
     </div>
   </div>
@@ -1484,6 +1533,28 @@ footer {
         <p class="reframe__note">Figures are for educational context. This guide does not provide medical diagnosis. Always consult a qualified healthcare professional.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     VIDEO SECTION
+========================================================= -->
+<section class="video-section">
+  <div class="container">
+    <span class="section-label">Educational Video</span>
+    <h2>Why Lipedema Is Often Mistaken for Obesity</h2>
+    <p class="video-intro">
+      Before you begin the protocol, watch this educational discussion about how lipedema differs from ordinary weight gain, why many women are misdiagnosed, and why a completely different approach is needed.
+    </p>
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/Fux_RXLsO44"
+        title="Lipedema vs Obesity: The Hidden Fat Disorder Doctors Miss"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <p class="video-disclaimer">This third-party educational video is provided for general awareness only and does not replace professional medical advice.</p>
   </div>
 </section>
 
@@ -1891,7 +1962,7 @@ footer {
           <li><span class="check check--yes">✓</span>Quick Start Guide</li>
         </ul>
         <a href="https://hoppeje.gumroad.com/l/THELIPEDEMARESETPROTOCOL" target="_blank" rel="noopener" class="btn btn-primary btn-block">Get Instant Access — €9,90</a>
-        <p class="cta-microcopy" style="text-align:center;">30-day satisfaction guarantee · Secure checkout</p>
+        <p class="cta-microcopy" style="text-align:center;">14-day satisfaction guarantee · Secure checkout</p>
       </div>
 
       <!-- PREMIUM -->
@@ -1900,7 +1971,7 @@ footer {
         <p class="pricing__tier">Complete</p>
         <p class="pricing__name">Premium</p>
         <div class="pricing__price">
-          <div class="pricing__amount"><span class="pricing__currency">€</span>67</div>
+          <div class="pricing__amount"><span class="pricing__currency">€</span>36</div>
           <p class="pricing__note">One-time payment · Instant access</p>
         </div>
         <ul class="pricing__features">
@@ -1927,7 +1998,7 @@ footer {
         <p class="pricing__tier">Personalised</p>
         <p class="pricing__name">VIP</p>
         <div class="pricing__price">
-          <div class="pricing__amount"><span class="pricing__currency">€</span>147</div>
+          <div class="pricing__amount"><span class="pricing__currency">€</span>96</div>
           <p class="pricing__note">One-time payment · Includes consultation</p>
         </div>
         <ul class="pricing__features">
@@ -1950,7 +2021,7 @@ footer {
 
     </div>
 
-    <p style="font-size:.82rem;color:var(--grey-text);margin-top:32px;font-style:italic;">Prices are in EUR. Secure checkout. Instant digital delivery. 30-day satisfaction guarantee on all versions.</p>
+    <p style="font-size:.82rem;color:var(--grey-text);margin-top:32px;font-style:italic;">Prices are in EUR. Secure checkout. Instant digital delivery. 14-day satisfaction guarantee on all versions.</p>
   </div>
 </section>
 
@@ -1961,7 +2032,7 @@ footer {
   <div class="container">
     <div class="guarantee__inner">
       <div class="guarantee__badge">
-        <div class="guarantee__badge-days">30</div>
+        <div class="guarantee__badge-days">14</div>
         <div class="guarantee__badge-text">Day<br>Satisfaction<br>Guarantee</div>
       </div>
       <div class="guarantee__content">
@@ -2078,7 +2149,7 @@ footer {
     <h2>"Your body was never the enemy.<br><em class="serif-italic">It was asking for the right kind of support."</em></h2>
     <p class="subtitle">Begin your reset today with science, compassion and practical tools created specifically for women navigating lipedema. No shame. No extreme restriction. No unrealistic promises.</p>
     <a href="https://hoppeje.gumroad.com/l/THELIPEDEMARESETPROTOCOL" target="_blank" rel="noopener" class="btn btn-gold btn-lg">Start The Lipedema Reset Protocol</a>
-    <p class="final-cta-note">Instant digital access · 30-day satisfaction guarantee · Educational wellness guide</p>
+    <p class="final-cta-note">Instant digital access · 14-day satisfaction guarantee · Educational wellness guide</p>
   </div>
 </section>
 
